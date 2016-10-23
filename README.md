@@ -1,10 +1,10 @@
-### Introduction
+## Introduction
 
 This is a multi-server chat system based on Java which takes security, failure handling and scalability into consideration. Chat servers are deployed on multiple VMs using AWS. A GUI was designed and implemented  to improve user experience. 
 
 All communications between servers and between clients and servers are encrypted via secure channels. There is also an authentication mechanism for user to login to the system with a unique username.
 
-### Server Info
+## Server Info
 
 - *central_server*:
   - Public DNS: ec2-54-165-255-160.compute-1.amazonaws.com
@@ -23,7 +23,7 @@ All communications between servers and between clients and servers are encrypted
 
 
 
-### Login to instance 
+## Login to instance 
 
 ***central_server***
 
@@ -53,7 +53,7 @@ ssh -i ~/.ssh/MyFirstKey.pem ubuntu@ec2-54-147-77-104.compute-1.amazonaws.com
 
 ------
 
-### Install Java
+## Install Java
 
 ```shell
 sudo add-apt-repository ppa:webupd8team/java
@@ -63,7 +63,7 @@ sudo apt-get install oracle-java8-installer
 
 ------
 
-### Upload Files
+## Upload Files
 
 ***central_server***
 
@@ -93,7 +93,7 @@ scp -i ~/.ssh/MyFirstKey.pem -r ~/Desktop/midnight ubuntu@ec2-54-147-77-104.comp
 
 ------
 
-### Launch Server
+## Launch Server
 
 ***central_server***
 
